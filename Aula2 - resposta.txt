@@ -1,0 +1,182 @@
+﻿// Exercício 1
+nro = prompt("Entre com um número inteiro:")
+nro = parseInt(nro)
+resto = nro % 2
+console.log("Resto:", resto)
+
+
+// Exercício 2
+a = prompt("Entre com um número inteiro:")
+b = prompt("Entre com um número inteiro:")
+a = parseInt(a)
+b = parseInt(b)
+resto = a % b
+console.log("Resto:", resto)
+
+
+// Exercício 3
+nro = prompt("Entre com um número inteiro:")
+nro = parseInt(nro)
+resto = nro % 2
+if( resto == 0 ){ 
+  console.log(nro, "é par")
+}
+else{
+  console.log(nro, "é ímpar")
+}
+console.log("Fim do programa")
+
+	
+// Exercício 4
+a = prompt("Entre com um número inteiro:")
+b = prompt("Entre com um número inteiro:")
+a = parseInt(a)
+b = parseInt(b)
+resto = a % b
+if( resto == 0 ){ 
+  console.log(a, "é múltiplo de", b)
+}
+else{
+  console.log(a, "não é múltiplo de", b)
+}
+console.log("Fim do programa")
+
+
+// Exercício 5
+a = prompt("Entre com um número inteiro:")
+b = prompt("Entre com um número inteiro:")
+a = parseInt(a)
+b = parseInt(b)
+if( a < b ){ 
+  console.log(a, "é menor que", b)
+}
+else{
+  console.log(a, "não é menor que", b)
+}
+console.log("Fim do programa")
+
+
+// Exercício 6
+idade = prompt("Entre com a idade:")
+idade = parseInt(idade)
+if( idade < 18 ){ 
+  console.log("De menor")
+}
+else{
+  console.log("Adulto")
+}
+console.log("Fim do programa")
+
+
+// Exercício 7
+a = prompt("Entre com um número:")
+b = prompt("Entre com um número:")
+c = prompt("Entre com um número:")
+a = parseInt(a)
+b = parseInt(b)
+c = parseInt(c)
+if( a <= b && b <= c ){ 
+  console.log("Maior:", c)
+}
+else{
+	if( a <= b && c <= b ){ 
+		console.log("Maior:", b)
+	}
+	else{
+		console.log("Maior:", a)
+	}
+}
+console.log("Fim do programa")
+
+
+// Exercício 8
+temperatura = prompt("Entre com a temperatura corporal:")
+temperatura = parseFloat(temperatura)
+if( temperatura <= 35 ){
+  console.log("Hipotermia")
+}
+else{
+	if( temperatura <= 37.7 ){
+		console.log("Normal")
+	}
+	else{
+		if( temperatura <= 39.5 ){
+			console.log("Febre")
+		}
+		else{
+			if( temperatura <= 41 ){
+				console.log("Febre alta")
+			}
+			else{
+				console.log("Hipertemia")
+			}
+		}
+	}
+}
+console.log("Fim do programa")
+
+  
+// Exercício 9
+peso = prompt("Entre com o peso (Kg):")
+altura = prompt("Entre com a altura (m):")
+peso = parseFloat(peso)
+altura = parseFloat(altura)
+imc = peso / (altura * altura)
+if( imc < 18.5 ){
+  console.log("Abaixo do peso")
+}
+else{
+	if( imc < 24.9 ){
+		console.log("Peso ideal")
+	}
+	else{
+		if( imc < 29.9 ){
+			console.log("Levemente acima do peso")
+		}
+		else{
+			if( imc < 34.9 ){
+				console.log("Obesidade grau I")
+			}
+			else{
+				if( imc < 39.9 ){
+					console.log("Obesidade grau II")
+				}
+				else{
+					console.log("Obesidade grau III")
+				}
+			}
+		}
+	}
+}
+console.log("Fim do programa")
+
+
+// Exercício 10
+fruta = prompt("Entre com o nome da fruta:")
+switch (fruta) {
+  case "laranja":
+    console.log("R$3,50")
+    break
+  case "limão":
+    console.log("R$3,00")
+    break
+  case "acerola":
+    console.log("R$3,50")
+    break
+  case "manga":
+    console.log("R$4,00")
+    break
+  case "morango":
+    console.log("R$5,00")
+    break
+  case "maracujá":
+    console.log("R$4,50")
+    break
+  case "açaí":
+    console.log("R$6,00")
+    break
+  default:
+    console.log("Não temos esse suco")
+}
+console.log("Fim do programa")
+

@@ -1,0 +1,117 @@
+﻿// Exercício 1
+numeros = ["um","dois","três","quatro"]
+console.log("Primeiro", numeros[0])
+
+
+// Exercício 2
+numeros = ["um","dois","três","quatro"]
+ultima = numeros.length - 1
+console.log("Último", numeros[ultima])
+
+
+// Exercício 3
+numeros = ["um","dois","três","quatro"]
+pos = numeros.length - 1
+while( pos >= 0 ){
+  console.log(pos, numeros[pos])
+  pos = pos - 1
+}
+	
+// Exercício 4
+numeros = [8,3,4,7,5]
+soma = 0
+pos = 0
+while( pos < numeros.length ){
+  soma = soma + numeros[pos]
+  pos = pos + 1
+}
+console.log("Somatório", soma)
+
+
+// Exercício 5
+numeros = [8,3,4,7,5,6,4]
+pos = 0
+while( pos < numeros.length){
+  if( numeros[pos]%2 == 1 ){
+    console.log("Ímpar", numeros[pos])
+  }
+  pos = pos + 1
+}
+ 
+ 
+// Exercício 6
+numeros = [8,3,4,7,5,6,4]
+pos = 0
+while( pos < numeros.length){
+  if( pos%2 == 1){
+    console.log(pos,":",numeros[pos])
+  }
+  pos = pos + 1
+}
+
+// Exercício 7
+pesos = [0.4,0.2,0.1,0.3]
+notas = [8.2,5.0,10.0,9.1]
+pos = 0
+while( pos < pesos.length){
+  console.log(pesos[pos],'*',notas[pos],'=',pesos[pos]*notas[pos])
+  pos = pos + 1
+}
+
+// Exercício 8
+pesos = [0.4,0.2,0.1,0.3]
+notas = [8.2,5.0,10.0,9.1]
+pos = 0
+soma = 0
+while( pos < pesos.length){
+  soma = soma + pesos[pos]*notas[pos]
+  pos = pos + 1
+}
+console.log("Nota final", soma)
+
+
+// Exercício 9
+entradas = [9,2,4,5,8]
+saidas = [3,5,2,7,4]
+pos = 0
+while( pos < entradas.length){
+  if( entradas[pos] < saidas[pos] ){
+    console.log(pos,":",saidas[pos])
+  }
+  else{
+    console.log(pos,":",entradas[pos])
+  }
+  pos = pos + 1
+}
+  
+// Exercício 10
+matriz = [
+  [9,2,4],
+  [6,5,7],
+  [2,1,3]
+]
+linha = 0
+while( linha < matriz.length ){
+  console.log(matriz[linha][linha])
+  linha = linha + 1
+}
+
+// Exercício 11
+matriz = [
+  [9,2,4],
+  [6,5,7],
+  [2,1,3]
+]
+linha = 0
+soma = 0
+while( linha < matriz.length ){
+  coluna = 0
+  while( coluna < matriz[linha].length ){
+    soma = soma + matriz[linha][coluna]
+    coluna = coluna + 1
+  }
+  linha = linha + 1
+}
+console.log("Somatório:", soma)
+
+ 

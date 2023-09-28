@@ -1,0 +1,34 @@
+﻿// Exercício 1
+nome = prompt("Entre com o nome:")
+quantidade = nome.length
+console.log("Quantidade:", quantidade)
+
+
+// Exercício 2
+nome = prompt("Entre com o nome:")
+console.log("Primeiro:", nome[0])
+
+
+// Exercício 3
+nome = prompt("Entre com o nome:")
+quantidade = nome.length
+console.log("Último:", nome[quantidade-1])
+
+	
+// Exercício 4
+nome = prompt("Entre com o nome:")
+pos = nome.length - 1
+while( pos >= 0 ){
+	console.log(nome[pos])
+	pos = pos - 1
+}
+	
+// Exercício 5
+nome = prompt("Entre com o nome:")
+pos = 0
+while( pos < nome.length ){
+	console.log(nome[pos])
+	pos = pos + 2
+}
+
+  

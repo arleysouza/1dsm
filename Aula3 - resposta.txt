@@ -1,0 +1,133 @@
+﻿// Exercício 1
+cont = 10
+while( cont <= 20 ){
+  console.log(cont)
+  cont = cont + 1
+}
+
+
+// Exercício 2
+menor = prompt("Entre com o menor valor:")
+maior = prompt("Entre com o maior valor:")
+menor = parseInt(menor)
+maior = parseInt(maior)
+while( menor <= maior ){
+  console.log(menor)
+  menor = menor + 1
+}
+
+	
+// Exercício 3
+menor = prompt("Entre com o menor valor:")
+maior = prompt("Entre com o maior valor:")
+menor = parseInt(menor)
+maior = parseInt(maior)
+if( menor > maior ){
+  aux = menor
+  menor = maior
+  maior = aux
+}
+while( menor <= maior ){
+  console.log(menor)
+  menor = menor + 1
+}
+
+
+// Exercício 4
+menor = prompt("Entre com o menor valor:")
+maior = prompt("Entre com o maior valor:")
+menor = parseInt(menor)
+maior = parseInt(maior)
+if( menor > maior ){
+  aux = menor
+  menor = maior
+  maior = aux
+}
+soma = 0
+while( menor <= maior ){
+  soma = soma + menor
+  menor = menor + 1
+}
+console.log("Somatório:", soma)
+
+
+// Exercício 5
+cont = 0
+soma = 0
+while( cont < 5 ){
+  nro = prompt("Entre com o número:")
+  nro = parseInt(nro)
+  soma = soma + nro
+  cont = cont + 1
+}
+console.log("Somatório:", soma)
+
+
+// Exercício 6
+cont = 0
+menor = 10000
+while( cont < 5 ){
+  nro = prompt("Entre com o número:")
+  nro = parseInt(nro)
+  if( nro < menor ){
+    menor = nro
+  }
+  cont = cont + 1
+}
+console.log("Menor valor:", menor)
+
+
+// Exercício 7
+cont = 0
+maior = -10000
+while( cont < 5 ){
+  nro = prompt("Entre com o número:")
+  nro = parseInt(nro)
+  if( maior < nro ){
+    maior = nro
+  }
+  cont = cont + 1
+}
+console.log("Maior valor:", maior)
+
+  
+// Exercício 8
+senha = "abc"
+entrada = ""
+while( entrada != senha ){
+  entrada = prompt("Entre com a senha:")
+  if( entrada == senha ){
+    console.log("Acesso liberado")
+  }
+  else{
+    console.log("Senha incorreta")
+  }
+}
+  
+// Exercício 9
+senha = "abc";
+entrada = "";
+i = 0;
+while(entrada != senha && i < 3){
+  entrada = prompt("Entre com a senha:");
+  if( entrada != senha ){
+    console.log("Incorreta");
+  }
+  i = i + 1;
+}
+if( entrada == senha ){
+  console.log("Liberado");
+}
+else{
+  console.log("Excedeu o número de tentativas");
+}
+
+
+// Exercício 10
+soma = 0
+while( soma <= 20 ){
+  nro = prompt("Entre com o número:")
+  nro = parseInt(nro)
+  soma = soma + nro
+}
+console.log("Somatório:", soma)

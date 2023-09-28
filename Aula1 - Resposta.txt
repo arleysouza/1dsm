@@ -1,0 +1,55 @@
+﻿// Exercício 1
+console.log("Boa noite!")
+
+// Exercício 2
+console.log(100)
+
+// Exercício 3
+console.log(true)
+	
+// Exercício 4
+x = 10
+y = 20
+console.log( x + y )
+
+// Exercício 5
+nome = "Arley"
+sobrenome = "Souza"
+console.log( nome + sobrenome )
+
+// Exercício 6
+nome = "Arley"
+idade = 44
+console.log( nome + idade )
+
+// Exercício 7
+nome = prompt("Entre com o seu nome:")
+console.log( nome )
+
+// Exercício 8
+idade = prompt("Entre com a sua idade:")
+idade = parseInt(idade)
+console.log( idade * 2 )
+
+// Exercício 9
+peso = prompt("Entre com o seu peso:")
+peso = parseFloat(peso)
+console.log( peso/2 )
+
+// Exercício 10
+peso = prompt("Entre com o peso (Kg):")
+altura = prompt("Entre com a altura (m):")
+peso = parseFloat(peso)
+altura = parseFloat(altura)
+imc = peso / (altura * altura)
+console.log( imc )
+
+// Exercício 11
+a = prompt("Entre com o 1o número:")
+b = prompt("Entre com o 2o número:")
+c = prompt("Entre com o 3o número:")
+a = parseFloat(a)
+b = parseFloat(b)
+c = parseFloat(c)
+r = (a + b + c)/3
+console.log( r )
